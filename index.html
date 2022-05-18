@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./script.js" defer></script>
+    <title>Weather Forecast App</title>
+</head>
+<body>
+    <div class="body-container">
+        <div class="main-container">
+            <div class="flex-container">
+                <div class="left">
+                        <div class="left-flex-container">
+                            <span id="temprature"></span>
+                            <div class="inside-containers">
+                                <div class="inside-container1">
+                                    <div id="location"></div>
+                                    <div id="temprature-symbol">
+                                        
+                                    </div>
+                                </div>
+                                <div class="inside-container2">
+                                    <div class="dateandtime"></div>
+                                    <div class="status"></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="right">
+                    <div class="search-flex-box">
+                        <input type="text" placeholder="Enter City Name" id="city-name">
+                        <button id="search-button">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <hr id="first-hr">
+                    <span id="span1">Suggestions</span>
+                    <div class="city-name-suggestion-box">
+                        <ul class="ul">
+                            <!-- <li class="selector list-item">city1</li> -->
+                        </ul>
+                    </div>
+                    <hr>
+                    <span id="span2">Weather Details</span>
+                    <ul class="weather-desc">
+                        <li class="list-items">
+                            <span class="litems">Cloudy</span>
+                            <span id="cloudy"></span>
+                        </li>
+                        <li class="list-items">
+                            <span class="litems">Humidity</span>
+                            <span id="humidity"></span>
+                        </li>
+                        <li class="list-items">
+                            <span class="litems">Wind</span>
+                            <span id="wind"></span>
+                        </li>
+                        <li class="list-items">
+                            <span class="litems">Description</span>
+                            <span id="desc"></span>
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!-- 
+<div id="WeatherSymbol">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120.7 50"  xml:space="preserve">
+        <g id="Cloud_1">
+            <g id="White_cloud_1">
+                <path id="XMLID_2_" class="white" d="M47.2,40H7.9C3.5,40,0,36.5,0,32.1l0,0c0-4.3,3.5-7.9,7.9-7.9h39.4c4.3,0,7.9,3.5,7.9,7.9v0 C55.1,36.5,51.6,40,47.2,40z"/>
+                <circle id="XMLID_3_" class="white" cx="17.4" cy="22.8" r="9.3"/>
+                <circle id="XMLID_4_" class="white" cx="34.5" cy="21.1" r="15.6"/>
+            <animateTransform attributeName="transform"
+            attributeType="XML"
+            dur="3s"
+            keyTimes="0;0.5;1"
+            repeatCount="indefinite"
+            type="translate"
+            values="0;5;0"
+            calcMode="linear">
+            </animateTransform>
+            </g>
+            <g id="Gray_cloud_1">
+                <path id="XMLID_6_" class="gray" d="M54.7,22.3H33.4c-3.3,0-6-2.7-6-6v0c0-3.3,2.7-6,6-6h21.3c3.3,0,6,2.7,6,6v0 C60.7,19.6,58,22.3,54.7,22.3z"/>
+                <circle id="XMLID_7_" class="gray" cx="45.7" cy="10.7" r="10.7"/>
+            <animateTransform attributeName="transform"
+            attributeType="XML"
+            dur="3s"
+            keyTimes="0;0.5;1"
+            repeatCount="indefinite"
+            type="translate"
+            values="0;-3;0"
+            calcMode="linear">
+            </animateTransform>
+            </g>
+        </g>
+    </svg>
+</div> -->
